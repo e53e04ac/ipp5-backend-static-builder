@@ -70,7 +70,7 @@ const constructor = ((options) => {
             return _self.scriptFile().parent();
         }),
         templateDockerfile: hold(() => {
-            return _self.scriptDirectory().resolve('Dockerfile');
+            return _self.scriptDirectory().resolve('Dockerfile.template');
         }),
         runDirectory: hold(() => {
             return _options.tmpDirectory().resolve('ipp5-backend-static-builder', _options.runId());
