@@ -22,8 +22,6 @@ export declare namespace Ipp5BackendStaticBuilder {
         readonly contextDocumentRootDirectoryRelativePath: string;
     };
 
-    type EventSpecs = Record<never, never>;
-
     type Options = {
         readonly docker: ValueOrGet<string>;
         readonly appDirectory: ValueOrGet<FileEntry>;
@@ -39,6 +37,8 @@ export declare namespace Ipp5BackendStaticBuilder {
         readonly containerAppDirectoryPath: ValueOrGet<string>;
         readonly containerDocumentRootDirectoryPath: ValueOrGet<string>;
     };
+
+    type EventSpecs = Record<never, never>;
 
     type _Self = {
         readonly options: Get<Options>;
