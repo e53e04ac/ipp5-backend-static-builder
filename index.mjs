@@ -73,7 +73,7 @@ const constructor = ((options) => {
             return _self.scriptDirectory().resolve('Dockerfile.template');
         }),
         runDirectory: hold(() => {
-            return _options.tmpDirectory().resolve('ipp5-backend-static-builder', _options.runId());
+            return _options.tmpDirectory().resolve(_options.runId());
         }),
         contextDirectory: hold(() => {
             return _self.runDirectory().resolve('context');
